@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite 1234]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="facebookproject10dec.testNg">
+        <methods>
+          <include name="RemovePOMObjects"/>
+          <include name="LogOut"/>
+          <include name="launchBrowser"/>
+          <include name="CloseDriver"/>
+          <include name="verifyFeaturePage"/>
+          <include name="verifyHomePage"/>
+          <include name="CreatePOMObjects"/>
+        </methods>
+      </class> <!-- facebookproject10dec.testNg -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite 1234] -->
